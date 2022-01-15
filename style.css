@@ -78,6 +78,10 @@ button{
 }
 .banner-right{
     text-align: center;
+    transition: transform .5s ease-in-out ;
+}
+header:hover .banner-right {
+    transform: rotate(360deg) scale(1);
 }
 .banner-right img{
     position: relative;
@@ -86,6 +90,8 @@ button{
     width: 80%;
     height: 80%;
 }
+
+
 
 /*=====================
  Company logos styles
@@ -117,7 +123,7 @@ button{
 .product{ 
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 0 5px 20px;
+    box-shadow: 0 5px 20px rgb(211, 191, 191);
     margin: 20px;
 }
 .product img{
@@ -145,15 +151,30 @@ button{
     text-align: right;
     color: #E02C6D;
     font-weight: 700;
+    margin-bottom: 50px;
+}
+/* =================
+    information
+==================== */
+.information{
+    padding-top: 50px;
+    background-color: #0A0826;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    color: #fff;
+}
+.information h3{
+    color: gray;
 }
 /* ================
     Footer style 
 =================== */
 footer{
+    border-top: 1px solid;
     text-align: center;
     background-color: #0A0826;
     color: white;
-    margin-top: 50px;
 }
 footer > div{
     padding: 20px;
@@ -218,6 +239,12 @@ footer > div{
         flex-wrap: wrap;
         justify-content: center;
     }
+    .information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     footer{
         width: 100%;
     }
@@ -265,6 +292,11 @@ footer > div{
        
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .information{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
     }
     footer{
         width: 100%;
