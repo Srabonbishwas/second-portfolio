@@ -20,19 +20,37 @@ header{
     margin: 0 70px;
 }
 .banner{
-    border: 1px solid;
+    max-width: 1600px;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .banner-left{
-    border: 1px solid;
+    top: 50px;
+    position: relative;
+}
+.banner-left h1{
+    font-weight: 700;
+    font-size: 53px;
+}
+.banner-left p{
+    font-size: 20px;
+    font-weight: 600;
+}
+button{
+    background-color: #E02C6D;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 15 25;
+    border-radius: 30px;
 }
 .banner-right{
     text-align: center;
-    border: 1px solid;
 }
 .banner-right img{
-    border: 1px solid;
+    position: relative;
+    top: 50px;
     width: 80%;
     height: 80%;
 }
@@ -45,36 +63,74 @@ header{
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
-
+    max-width: 1600px;
 }
 
 /*======================
      section Styles
 ======================== */
 .popular-products{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .products{
-    border: 1px solid;
-    margin: 0 50px;
+    width: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.product{
+.product{ 
     margin: 15 0;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
     border: 1px solid;
     box-shadow: 0 5px 20px;
     width: 329px;
     height: 476px;
 }
+.product img{
+    width: 97%;
+    padding: 4px;
+}
 .product-details{
     text-align: left;
+    margin-left: 5px;
 }
-.product-details p, 
-.product-details div{
-    line-height: 10px;
+.product-details div,
+.rating, h3{
+    line-height: 8px;
+}
+.rating .filled{
+    color: #FB8200;
+}
+.rating{
+    font-size: 14px;
+}
+.rating span{
+    font-size: 16px;
+    font-weight: 700;
+}
+/* ================
+    Footer style 
+=================== */
+footer{
+    text-align: center;
+    background-color: #0A0826;
+    color: white;
+    margin-top: 50px;
+}
+footer > div{
+    padding: 20px;
+    line-height: 15px;
+}
+.social-media{
+   margin: 30px 10px 30px 10px;
+}
+.social-media span{
+    margin: 0 5px;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #141135;
+    border-radius: 50%;
 }
