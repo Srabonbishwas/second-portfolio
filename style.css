@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,800&family=Poppins:wght@300&display=swap');
+
+/*====================
+     Common Styles
+====================== */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ====================
+    Header Styles
+======================= */
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 70px;
+}
+.banner{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-left{
+    border: 1px solid;
+}
+.banner-right{
+    text-align: center;
+    border: 1px solid;
+}
+.banner-right img{
+    border: 1px solid;
+    width: 80%;
+    height: 80%;
+}
+
+/*=====================
+ Company logos styles
+======================= */
+.company-logos{
+    margin: 0 70px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*======================
+     section Styles
+======================== */
+.popular-products{
+    text-align: center;
+}
+.products{
+    border: 1px solid;
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product{
+    margin: 15 0;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid;
+    box-shadow: 0 5px 20px;
+    width: 329px;
+    height: 476px;
+}
+.product-details{
+    text-align: left;
+}
+.product-details p, 
+.product-details div{
+    line-height: 10px;
+}
